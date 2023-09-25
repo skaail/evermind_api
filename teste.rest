@@ -1,0 +1,24 @@
+GET http://localhost:3000/candidatos HTTP/1.1
+
+#######
+
+POST http://localhost:3000/candidatos HTTP/1.1
+content-type: application/json
+
+
+{
+    "nome": "teste",
+    "email": "teste@gmail.com",
+    "senha": "teste123"
+}
+
+#######
+
+POST http://localhost:3000/login HTTP/1.1
+content-type: application/json
+
+
+{
+    "email": "teste@gmail.com",
+    "senha": "teste123"
+}
